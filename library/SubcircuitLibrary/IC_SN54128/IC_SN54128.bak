@@ -1,0 +1,221 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+LIBS:IC_SN54128-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SN54128 X1
+U 1 1 68595C89
+P 5700 3800
+F 0 "X1" H 5700 3450 60  0000 C CNN
+F 1 "SN54128" H 5700 4100 60  0000 C CNN
+F 2 "" H 5700 3800 60  0001 C CNN
+F 3 "" H 5700 3800 60  0001 C CNN
+	1    5700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v2
+U 1 1 68595CB0
+P 3650 3600
+F 0 "v2" H 3450 3700 60  0000 C CNN
+F 1 "pulse" H 3450 3550 60  0000 C CNN
+F 2 "R1" H 3350 3600 60  0000 C CNN
+F 3 "" H 3650 3600 60  0000 C CNN
+	1    3650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L pulse v3
+U 1 1 68595D17
+P 3650 4150
+F 0 "v3" H 3450 4250 60  0000 C CNN
+F 1 "pulse" H 3450 4100 60  0000 C CNN
+F 2 "R1" H 3350 4150 60  0000 C CNN
+F 3 "" H 3650 4150 60  0000 C CNN
+	1    3650 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 68595D58
+P 4900 4250
+F 0 "#PWR01" H 4900 4000 50  0001 C CNN
+F 1 "GND" H 4900 4100 50  0000 C CNN
+F 2 "" H 4900 4250 50  0001 C CNN
+F 3 "" H 4900 4250 50  0001 C CNN
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L DC v1
+U 1 1 68595D72
+P 3650 2900
+F 0 "v1" H 3450 3000 60  0000 C CNN
+F 1 "DC" H 3450 2850 60  0000 C CNN
+F 2 "R1" H 3350 2900 60  0000 C CNN
+F 3 "" H 3650 2900 60  0000 C CNN
+	1    3650 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 68595DBE
+P 3200 3700
+F 0 "#PWR02" H 3200 3450 50  0001 C CNN
+F 1 "GND" H 3200 3550 50  0000 C CNN
+F 2 "" H 3200 3700 50  0001 C CNN
+F 3 "" H 3200 3700 50  0001 C CNN
+	1    3200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 68595DD5
+P 3200 4250
+F 0 "#PWR03" H 3200 4000 50  0001 C CNN
+F 1 "GND" H 3200 4100 50  0000 C CNN
+F 2 "" H 3200 4250 50  0001 C CNN
+F 3 "" H 3200 4250 50  0001 C CNN
+	1    3200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 68595DEC
+P 3200 3000
+F 0 "#PWR04" H 3200 2750 50  0001 C CNN
+F 1 "GND" H 3200 2850 50  0000 C CNN
+F 2 "" H 3200 3000 50  0001 C CNN
+F 3 "" H 3200 3000 50  0001 C CNN
+	1    3200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U3
+U 1 1 68595E62
+P 6450 3750
+F 0 "U3" H 6450 4250 60  0000 C CNN
+F 1 "plot_v1" H 6650 4100 60  0000 C CNN
+F 2 "" H 6450 3750 60  0000 C CNN
+F 3 "" H 6450 3750 60  0000 C CNN
+	1    6450 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L plot_v1 U1
+U 1 1 68595EBF
+P 4350 4000
+F 0 "U1" H 4350 4500 60  0000 C CNN
+F 1 "plot_v1" H 4550 4350 60  0000 C CNN
+F 2 "" H 4350 4000 60  0000 C CNN
+F 3 "" H 4350 4000 60  0000 C CNN
+	1    4350 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L plot_v1 U2
+U 1 1 68595F5D
+P 4750 4000
+F 0 "U2" H 4750 4500 60  0000 C CNN
+F 1 "plot_v1" H 4950 4350 60  0000 C CNN
+F 2 "" H 4750 4000 60  0000 C CNN
+F 3 "" H 4750 4000 60  0000 C CNN
+	1    4750 4000
+	-1   0    0    1   
+$EndComp
+Text GLabel 6450 3450 1    60   Input ~ 0
+OUT
+Text GLabel 4450 4100 2    60   Input ~ 0
+A
+Text GLabel 4850 4000 2    60   Input ~ 0
+B
+Wire Wire Line
+	4100 3600 5050 3600
+Wire Wire Line
+	4100 4150 4100 3850
+Wire Wire Line
+	4100 3850 5050 3850
+Wire Wire Line
+	4100 2900 5050 2900
+Wire Wire Line
+	5050 2900 5050 3450
+Wire Wire Line
+	3200 2900 3200 3000
+Wire Wire Line
+	3200 3600 3200 3700
+Wire Wire Line
+	3200 4150 3200 4250
+Wire Wire Line
+	5050 4100 4900 4100
+Wire Wire Line
+	4900 4100 4900 4250
+Wire Wire Line
+	4350 4200 4350 3600
+Connection ~ 4350 3600
+Wire Wire Line
+	4750 4200 4750 3850
+Connection ~ 4750 3850
+Wire Wire Line
+	6450 3450 6450 3750
+Wire Wire Line
+	4850 4000 4750 4000
+Connection ~ 4750 4000
+Wire Wire Line
+	4450 4100 4350 4100
+Connection ~ 4350 4100
+Connection ~ 6450 3750
+Wire Wire Line
+	6250 3750 6650 3750
+$EndSCHEMATC

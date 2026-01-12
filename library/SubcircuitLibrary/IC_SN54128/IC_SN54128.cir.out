@@ -1,0 +1,36 @@
+* e:\ic_sn54128\ic_sn54128.cir
+
+.include SN54128.sub
+v1  a1 gnd pulse(0 5 0.01n 0.01n 0.01n 5m 10m)
+v2  b1 gnd pulse(0 5 0.01n 0.01n 0.01n 10m 20m)
+v3  a2 gnd pulse(0 5 0.01n 0.01n 0.01n 15m 30m)
+v4  b2 gnd pulse(0 5 0.01n 0.01n 0.01n 20m 40m)
+v5  a3 gnd pulse(0 5 0.01n 0.01n 0.01n 25m 50m)
+v6  b3 gnd pulse(0 5 0.01n 0.01n 0.01n 30m 60m)
+v7  a4 gnd pulse(0 5 0.01n 0.01n 0.01n 35m 70m)
+v8  b4 gnd pulse(0 5 0.01n 0.01n 0.01n 40m 80m)
+v9 net-_x1-pad14_ gnd  dc 5
+* u9  out1 plot_v1
+* u10  out2 plot_v1
+* u11  out3 plot_v1
+* u12  out4 plot_v1
+* u3  a1 plot_v1
+* u5  b1 plot_v1
+* u7  a2 plot_v1
+* u8  b2 plot_v1
+* u2  a4 plot_v1
+* u4  a3 plot_v1
+* u6  b3 plot_v1
+* u1  b4 plot_v1
+x1 a4 b4 a2 b2 a3 b3 a1 b1 out4 out2 out3 out1 gnd net-_x1-pad14_ SN54128
+.tran 1e-06 80e-03 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(out1) v(out2)+10 v(out3)+20 v(out4)+30
+plot v(a1) v(b1)+10 v(a2)+20 v(b2)+30 v(a4)+40 v(a3)+50 v(b3)+60 v(b4)+70
+.endc
+.end

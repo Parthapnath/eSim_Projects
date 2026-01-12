@@ -1,0 +1,32 @@
+* E:\IC_SN54128\IC_SN54128.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 07/01/25 10:24:51
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  A1 GND pulse		
+v2  B1 GND pulse		
+v3  A2 GND pulse		
+v4  B2 GND pulse		
+v5  A3 GND pulse		
+v6  B3 GND pulse		
+v7  A4 GND pulse		
+v8  B4 GND pulse		
+v9  Net-_X1-Pad14_ GND DC		
+U9  OUT1 plot_v1		
+U10  OUT2 plot_v1		
+U11  OUT3 plot_v1		
+U12  OUT4 plot_v1		
+U3  A1 plot_v1		
+U5  B1 plot_v1		
+U7  A2 plot_v1		
+U8  B2 plot_v1		
+U2  A4 plot_v1		
+U4  A3 plot_v1		
+U6  B3 plot_v1		
+U1  B4 plot_v1		
+X1  A4 B4 A2 B2 A3 B3 A1 B1 OUT4 OUT2 OUT3 OUT1 GND Net-_X1-Pad14_ SN54128		
+
+.end
